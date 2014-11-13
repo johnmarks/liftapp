@@ -1,7 +1,0 @@
-{
-  "name": "lift",
-  "version": "0.0.0",
-  "dependencies": {
-    "statik": "~1.4.6"
-  }
-}

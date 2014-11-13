@@ -2,4 +2,4 @@
 
 var statik = require('statik');
 var server = statik('app', {default: 'index.html'});
-server.listen();
+server.listen(process.env.PORT || 5000);

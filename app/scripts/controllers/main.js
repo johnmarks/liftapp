@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name liftappApp.controller:MainCtrl
+ * @name liftApp.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the liftappApp
+ * Controller of the liftApp
  */
-angular.module('liftappApp')
+angular.module('liftApp')
   .controller('MainCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',

@@ -1,4 +1,0 @@
-liftapp
-=======
-
-TODO: add readme

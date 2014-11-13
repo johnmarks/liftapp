@@ -2,32 +2,20 @@
 
 /**
  * @ngdoc overview
- * @name liftappApp
+ * @name liftApp
  * @description
- * # liftappApp
+ * # liftApp
  *
  * Main module of the application.
  */
-angular
-  .module('liftappApp', [
+angular.module('liftApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
-  ])
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
-      })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
-      })
-      .otherwise({
-        redirectTo: '/'
-      });
-  });
+    'ngTouch',
+    'firebase',
+    'firebase.utils',
+    'simpleLogin'
+  ]);

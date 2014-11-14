@@ -8,10 +8,16 @@
  * Controller of the liftApp
  */
 angular.module('liftApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('MainCtrl', function ($scope, fbutil) {
+    $scope.exercises = fbutil.syncArray('exercises');
+ 
+    $scope.addExercise = function(){
+      $scope.exercises.$add({text: $scope.exercise});
+      $scope.exercise = '';
+    };
+
+    $scope.removeExercise = function(exercise) {
+      // alert(exercise.$id);
+      $scope.exercises.$remove(exercise);
+    };
   });

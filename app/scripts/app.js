@@ -17,5 +17,6 @@ angular.module('liftApp', [
     'ngTouch',
     'firebase',
     'firebase.utils',
-    'simpleLogin'
+    'simpleLogin',
+    'ui.sortable'
   ]);

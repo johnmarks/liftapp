@@ -57,7 +57,7 @@ angular.module('liftApp')
   // which should only be available while logged in
   .config(['$routeProvider', function($routeProvider) {
     $routeProvider
-      .when('/', {
+      .whenAuthenticated('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
@@ -67,9 +67,10 @@ angular.module('liftApp')
         controller: 'LoginCtrl'
       })
 
-      .when('/chat', {
+      .whenAuthenticated('/chat', {
         templateUrl: 'views/chat.html',
         controller: 'ChatCtrl'
+
       })
 
       .whenAuthenticated('/account', {
@@ -77,10 +78,6 @@ angular.module('liftApp')
         controller: 'AccountCtrl'
       })
 
-      .when('/chat', {
-        templateUrl: 'views/chat.html',
-        controller: 'ChatCtrl'
-      })
       .otherwise({redirectTo: '/'});
   }])
 

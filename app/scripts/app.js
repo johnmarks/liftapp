@@ -18,5 +18,5 @@ angular.module('liftApp', [
     'firebase',
     'firebase.utils',
     'simpleLogin',
-    'ui.sortable'
+    'ui.sortable',
   ]);

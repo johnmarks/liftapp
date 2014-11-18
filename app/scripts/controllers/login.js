@@ -44,7 +44,7 @@ angular.module('liftApp')
       $scope.err = null;
       simpleLogin.login(provider, opts).then(
         function() {
-          $location.path('/account');
+          $location.path('/');
         },
         function(err) {
           $scope.err = err;
